@@ -428,6 +428,9 @@ body {
   .hero-text {
     font-size: 2rem;
   }
+  .interactive-image {
+    min-height: 14rem;
+  }
   .grid-items {
     padding-left: 1em;
     padding-right: 10em;
