@@ -13,13 +13,15 @@
         <header class="nav-and-logo-container">
             <img src="images/logo.svg" alt="LOGO">
             <div class="nav-links-container">
+                <img id="hidden-logo" src="images/logo.svg" alt="">
+                <img onclick="closeNavCard()" id="close-button" src="images/close_FILL0_wght400_GRAD0_opsz48.svg" alt="">
                 <a href="" class="nav-links">about</a>
                 <a href="" class="nav-links">careers</a>
                 <a href="" class="nav-links">events</a>
                 <a href="" class="nav-links">products</a>
                 <a href="" class="nav-links">support</a>
-                <img id="hamburger-menu"  src="images/icon-hamburger.svg" alt="">
             </div>
+            <img onclick="displayNavCard()" id="hamburger-menu"  src="images/icon-hamburger.svg" alt="">
         </header>
         <div class="hero-text">
             <div>Immersive experiences that deliver</div>
@@ -77,5 +79,8 @@
             <div class="copyright"> © 2021 Loopstudios. All rights reserved.</div>
         </div>
     </footer>
+
+
+    <script src="Js/index.js"></script>
 </body>
 </html>

@@ -78,6 +78,14 @@ body {
   display: none;
 }
 
+#hidden-logo {
+  display: none;
+}
+
+#close-button {
+  display: none;
+}
+
 .interactive-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,11 +376,50 @@ body {
   :root {
     --body-padding: 3em 1.5em;
   }
-  .nav-links {
+  .header {
+    position: relative;
+  }
+  .nav-links-container {
     display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 100;
+    font-family: var(--josefin-sans-font);
+  }
+  .nav-links {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  #hidden-logo {
+    display: block;
+    position: absolute;
+    left: 1.5em;
+    top: 3rem;
+    width: 9rem;
   }
   #hamburger-menu {
     display: block;
+  }
+  #close-button {
+    display: block;
+    position: absolute;
+    top: 3em;
+    right: 1.5em;
+    width: 2.5rem;
   }
   .footer {
     -ms-flex-wrap: wrap;
@@ -453,6 +500,13 @@ body {
 }
 
 @media screen and (max-width: 390px) {
+  .nav-links-container {
+    display: none;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 1rem;
+  }
   .hero-text {
     font-size: 2rem;
     min-width: 15rem;
