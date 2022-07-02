@@ -256,6 +256,12 @@ body {
   padding: 0.5em 1em;
 }
 
+.black-background:hover {
+  background-color: var(--Black);
+  color: white;
+  cursor: pointer;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,6 +455,7 @@ body {
 @media screen and (max-width: 390px) {
   .hero-text {
     font-size: 2rem;
+    min-width: 15rem;
   }
   .interactive-image {
     min-height: 14rem;
