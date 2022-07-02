@@ -184,6 +184,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  font-family: var(--josefin-sans-font);
 }
 
 .grid-items span {
@@ -423,9 +424,16 @@ body {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .hero-text {
     font-size: 2rem;
+  }
+  .grid-items {
+    padding-left: 1em;
+    padding-right: 10em;
+  }
+  .creation-section-grid {
+    grid-auto-rows: 7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

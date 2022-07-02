@@ -150,6 +150,7 @@ body {
     position: relative;
     display: flex;
     align-items: flex-end;
+    font-family: var(--josefin-sans-font);
     span {
         position: relative;
         z-index: 3;
@@ -357,8 +358,16 @@ body {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
     .hero-text {
         font-size: 2rem;
+    }
+    .grid-items {
+        padding-left: 1em;
+        padding-right: 10em;
+    }
+    .creation-section-grid {
+        grid-auto-rows: 7rem;
+
     }
 }
