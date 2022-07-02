@@ -26,7 +26,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: 38rem;
-  height: 100vh;
+  height: clamp(30rem, 100vh, 39rem);
   padding: var(--body-padding);
 }
 
