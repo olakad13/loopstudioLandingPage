@@ -239,6 +239,23 @@ body {
   background-image: url(../images/desktop/image-fisheye.jpg);
 }
 
+.hidden-container {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+
+.see-all {
+  letter-spacing: 0.5em;
+  border: 2px solid var(--Black);
+  padding: 0.5em 1em;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,6 +350,11 @@ body {
   }
   .creation-section-header > div:last-of-type {
     display: none;
+  }
+  .hidden-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -434,6 +456,9 @@ body {
   .grid-items {
     padding-left: 1em;
     padding-right: 7em;
+  }
+  .creation-section-header > div:first-of-type {
+    font-size: 2rem;
   }
   .creation-section-grid {
     grid-auto-rows: 7rem;
