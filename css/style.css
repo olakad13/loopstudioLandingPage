@@ -400,6 +400,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     font-family: var(--josefin-sans-font);
+    z-index: 100;
   }
   .nav-links {
     text-transform: uppercase;

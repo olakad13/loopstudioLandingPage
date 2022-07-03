@@ -328,7 +328,7 @@ body {
         row-gap: 2rem;
         justify-content: center;
         font-family: var(--josefin-sans-font);
-        
+        z-index: 100;
     }
     .nav-links {
         text-transform: uppercase;
