@@ -6,10 +6,13 @@ hamburger.addEventListener('click', displayNavCard);
 closeButton.addEventListener('click', closeNavCard);
 
 function displayNavCard() {
-    navCard.style.display = 'flex';
+    navCard.style.opacity = 1;
+    navCard.style.visibility = 'visible';
+
 }
 
 function closeNavCard() {
-    navCard.style.display = 'none';
+    navCard.style.opacity = 0;
+    navCard.style.visibility = 'hidden';
 }
 
