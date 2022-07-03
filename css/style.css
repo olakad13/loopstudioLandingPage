@@ -5,7 +5,7 @@
   --Black: hsl(0, 0%, 0%);
   --Dark-Gray: hsl(0, 0%, 55%);
   --Very-Dark-Gray: hsl(0, 0%, 41%);
-  --body-padding: 4em 7em;
+  --body-padding: 4em 4em;
   --alata-font: 'Alata', sans-serif;
   --josefin-sans-font: 'Josefin Sans', sans-serif;
 }
@@ -101,7 +101,7 @@ body {
 
 .interactive-image {
   width: 60%;
-  min-height: 30rem;
+  min-height: 25rem;
   background-image: url(../images/desktop/image-interactive.jpg);
   background-size: 100% 100%;
 }
@@ -171,11 +171,11 @@ body {
 .creation-section-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(13rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   margin-top: 5rem;
   grid-auto-rows: 20rem;
-  gap: 2.5vw;
+  gap: 2vw;
 }
 
 .grid-items {
@@ -183,7 +183,7 @@ body {
   background-repeat: no-repeat;
   color: var(--White);
   text-transform: uppercase;
-  padding: 1em 2em;
+  padding: 1em 1em;
   font-size: 1.5rem;
   position: relative;
   display: -webkit-box;
@@ -380,11 +380,13 @@ body {
     position: relative;
   }
   .nav-links-container {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: fixed;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: var(--Black);
     top: 0;
     left: 0;
     right: 0;
@@ -397,8 +399,11 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    z-index: 100;
+    z-index: -100;
     font-family: var(--josefin-sans-font);
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-out;
+    transition: opacity .5s ease-out;
   }
   .nav-links {
     text-transform: uppercase;
@@ -501,7 +506,9 @@ body {
 
 @media screen and (max-width: 390px) {
   .nav-links-container {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
