@@ -21,6 +21,7 @@
 
 body {
     font-family: var(--alata-font);
+    background-color: white;
 }
 // header styling
 
@@ -29,7 +30,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 38rem;
-    height: clamp(38rem,100vh,40rem);
+    height: clamp(39.5rem,100vh,40rem);
     padding: var(--body-padding);
 }
 
@@ -314,7 +315,7 @@ body {
         position: relative;
     }
     .nav-links-container {
-        display: flex;
+        display: none;
         position: fixed;
         height: 100vh;
         width: 100vw;
@@ -326,10 +327,8 @@ body {
         flex-direction: column;
         row-gap: 2rem;
         justify-content: center;
-        z-index: -100;
         font-family: var(--josefin-sans-font);
-        opacity: 1;
-        transition: opacity .5s ease-out;
+        
     }
     .nav-links {
         text-transform: uppercase;
@@ -418,10 +417,8 @@ body {
     }
 }
 
-
 @media screen and (max-width: 390px) {
     .nav-links-container {
-        display: flex;
         align-items: flex-start;
         padding-left: 1rem;
     }
