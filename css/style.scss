@@ -8,7 +8,7 @@
     --Black: hsl(0, 0%, 0%);
     --Dark-Gray: hsl(0, 0%, 55%);
     --Very-Dark-Gray: hsl(0, 0%, 41%);
-    --body-padding: 4em 4em;
+    --body-padding: 4em 8em;
     --alata-font: 'Alata', sans-serif;
     --josefin-sans-font: 'Josefin Sans', sans-serif;
 }
@@ -84,16 +84,16 @@ body {
 }
 
 .interactive-image {
-    width: 60%;
-    min-height: 25rem;
+    width: 65%;
+    min-height: 31rem;
     background-image: url(../images/desktop/image-interactive.jpg);
     background-size: 100% 100%;
 }
 
 .interactive-section-description {
     position: absolute;
-    width: 52.6%;
-    height: 60%;
+    width: 49%;
+    height: 56.5%;
     background-color: var(--White);
     bottom: 0;
     right: 0;
@@ -104,14 +104,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    row-gap: 15%;
+    row-gap: 9%;
     & > p {
         color: var(--Dark-Gray);
+        font-size: 0.9rem;
     }
 }
 
 .interactive-section-header {
-    font-size: clamp(2rem,4vw,3.3rem);
+    font-size: clamp(1.8rem,3vw,3rem);
     text-transform: uppercase;
     font-family: var(--josefin-sans-font);
 }
@@ -139,7 +140,7 @@ body {
 
 .creation-section-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(13rem,1fr));
     margin-top: 5rem;
     grid-auto-rows: 20rem;
     gap: 2vw;
